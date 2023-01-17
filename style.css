@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400&family=Moon+Dance&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: burlywood;
+    --secondary-text-color: peru;
+    --accent-color: sandybrown;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding-inline: 20px;
+    background-image: url(https://images.pexels.com/photos/1846422/pexels-photo-1846422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+
+/* nav bar */
+
+.logo {
+    color: burlywood;
+    font-family: 'Moon Dance', sans-serif;
+    padding: 10px 0 0 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.link ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+/* description */
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 0 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.description h4 {
+    font-family: 'Moon Dance', sans-serif;
+    font-size: 2.5rem;
+    padding-block: 20px;
+    color: peachpuff;
+}
+
+.description h3 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 8rem;
+    color: var(--primary-text-color);
+}
+
+/* about */
+
+.container-2 {
+    background: silver;
+    text-align: center;
+    padding: 80px;
+    justify-content: center;
+}
+
+.container-2 .about {
+    margin: auto;
+    margin-left: 50px;
+}
+
+.container-2 .about h4 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.container-2 .about p {
+    font-family: 'Moon Dance', sans-serif;
+    font-size: 1.7rem;
+}
+
+/* menu */
+
+.card {
+    background: rgb(97,92,88);
+    box-shadow: 0 4px 8px 0 rgb(97,92,88, 0.5);
+    background-image: url(favicon/bg.jpg);
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.menu {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu h4 {
+    color: maroon;
+}
+
+.dish-contents {
+    padding-block: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    justify-content: space-evenly;
+}
+
+.dish-title .dish-price {
+    font-size: 1.2rem;
+}
+
+/* footer */
+
+footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-family: 'Moon Dance', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: burlywood;
+    position: relative;
+}
+
+.footer-col p  {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5rem;
+    color: saddlebrown;
+}
+
+.list {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5rem;
+    color: saddlebrown;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+/* responsive */
+
+@media (max-width: 996px) {
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .link ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+
+    .link ul {
+        gap: 10px;
+    }
+}
